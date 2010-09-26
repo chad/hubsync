@@ -40,7 +40,7 @@ Synchronize your GitHub repositories for offline viewing.
 
 HubSync uses [Bundler](http://gembundler.com) to manage its dependencies during
 development. To begin development, fork [dirtyalpaca/hubsync][1], ensure you
-have Bundler >= 1.0.0 installed and run `bundle install` inside the clone of
+have Bundler (>= 1.0.0) installed and run `bundle install` inside the clone of
 your fork.
 
 Specs can be run via `rake spec` and features via `rake cucumber`.
@@ -61,7 +61,7 @@ The workflow for contributing code to HubSync is as follows:
 
 ## Copyright
 
-Copyright (c) 2010 by Anthony Burns. See LICENSE.txt for details.
+Copyright (c) 2010 by Anthony Burns. See the LICENSE for details.
 
   [1]: http://github.com/dirtyalpaca/hubsync
   [2]: http://github.com/dirtyalpaca/hubsync/issues
