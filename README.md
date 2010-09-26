@@ -45,7 +45,7 @@ Synchronize your GitHub repositories for offline viewing.
 ## Options
 
 * `--own, -o`: *TODO*
-* `--collaborating, -c`: *TODO*
+* `--collabed, -c`: *TODO*
 * `--watched, -w`: *TODO*
 * `--user, -u`: *TODO*
 
