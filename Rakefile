@@ -16,3 +16,5 @@ task :clobber do
   rm_rf 'pkg'
   rm_rf 'tmp'
 end
+
+RSpec::Core::RakeTask.new(:spec)
