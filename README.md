@@ -14,23 +14,40 @@ Synchronize your GitHub repositories for offline viewing.
 
 ## Usage
 
-*TBD*
+    $ hubsync [options] [directory]
+
+*TODO*
 
 ### Synchronizing repositories you own
 
-*TBD*
+    $ hubsync -o [directory]
+
+*TODO*
 
 ### Synchronizing repositories you are a collaborator on
 
-*TBD*
+    $ hubsync -c [directory]
+
+*TODO*
 
 ### Synchronizing repositories in your watchlist
 
-*TBD*
+    $ hubsync -w [directory]
+
+*TODO*
 
 ### Synchronizing another person's watchlist
 
-*TBD*
+    $ hubsync -u <username> [directory]
+
+*TODO*
+
+## Options
+
+* `--own, -o`: *TODO*
+* `--collaborating, -c`: *TODO*
+* `--watched, -w`: *TODO*
+* `--user, -u`: *TODO*
 
 ## Configuration
 
