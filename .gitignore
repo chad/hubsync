@@ -1,6 +1,5 @@
 .bundle
 .DS_Store
 *.swp
-Gemfile.lock
 coverage
 pkg
