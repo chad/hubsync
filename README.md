@@ -44,10 +44,19 @@ Synchronize your GitHub repositories for offline viewing.
 
 ## Options
 
+### Synchronization Targets
+
 * `--own, -o`: *TODO*
 * `--collabed, -c`: *TODO*
 * `--watched, -w`: *TODO*
 * `--user, -u`: *TODO*
+
+### General Options
+
+* `--debug, -d`: Output debugging information.
+* `--help, -h`: Print help for HubSync.
+* `--quiet, -q`: Suppress output.
+* `--verbose, -v`: Verbose output.
 
 ## Configuration
 
