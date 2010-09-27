@@ -13,7 +13,7 @@ repositories or watchlist if you so desire).
 
 ## Requirements
 
-* [git](http://git-scm.com)
+* [git](http://git-scm.com) (tested with version 1.7.2.2)
 * [bundler 1.0.0](http://gembundler.com) (for development)
 * [ruby 1.9.2](http://ruby-lang.org) (for development)
 
