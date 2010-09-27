@@ -6,10 +6,10 @@ HubSync allows you to manage your collection of repositories on GitHub. It will
 automatically pull or fetch each repository in the target directory for you.
 
 Please note that HubSync is not a synchronization tool in the classic sense, in
-that it does not push any changes back to GitHub for you. HubSync is mean't to
-allow you to sanely maintain a clone of your own repositories, repositories you
-collaborate on, and your watchlist (or even another user's watchlist if you so
-desire).
+that it does not push any changes back to GitHub for you. HubSync is meant to
+allow you to efficiently maintain a clone of your own repositories, repositories
+you collaborate on, and your watchlist (or even another user's public
+repositories or watchlist if you so desire).
 
 ## Requirements
 
