@@ -2,6 +2,7 @@
 
 source 'http://rubygems.org'
 
+gem 'aruba'
 gem 'cucumber'
 gem 'fakeweb'
 gem 'rake'

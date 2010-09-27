@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    aruba (0.2.1)
     builder (2.1.2)
     cucumber (0.9.0)
       builder (~> 2.1.2)
@@ -38,6 +39,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aruba
   cucumber
   fakeweb
   rake
