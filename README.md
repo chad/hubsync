@@ -2,6 +2,15 @@
 
 Synchronize your GitHub repositories for offline viewing.
 
+HubSync allows you to manage your collection of repositories on GitHub. It will
+automatically pull or fetch each repository in the target directory for you.
+
+Please note that HubSync is not a synchronization tool in the classic sense, in
+that it does not push any changes back to GitHub for you. HubSync is mean't to
+allow you to sanely maintain a clone of your own repositories, repositories you
+collaborate on, and your watchlist (or even another user's watchlist if you so
+desire).
+
 ## Requirements
 
 * [git](http://git-scm.com)
@@ -16,31 +25,25 @@ Synchronize your GitHub repositories for offline viewing.
 
     $ hubsync [options] [directory]
 
-*TODO*
-
 ### Synchronizing repositories you own
 
     $ hubsync -o [directory]
-
-*TODO*
 
 ### Synchronizing repositories you are a collaborator on
 
     $ hubsync -c [directory]
 
-*TODO*
-
 ### Synchronizing repositories in your watchlist
 
     $ hubsync -w [directory]
 
-*TODO*
-
-### Synchronizing another person's watchlist
+### Synchronizing another user's public repositories.
 
     $ hubsync -u <username> [directory]
 
-*TODO*
+### Synchronizing another user's watchlist.
+
+    $ hubsync -wu <username> [directory]
 
 ## Options
 
@@ -52,14 +55,17 @@ Use `hubsync --help` for the full list of options.
 * `--collabed, -c`: Synchronize repositories that you are a collaborator on.
 * `--watched, -w`: Synchronize watched repositories in the target directory
   for the yourself (by default or if `-o` is set) or for the specified user (if
-  `-u` is set).
-* `--user, -u <USERNAME>`: Synchronize repositories in the target directory owned (or
-  watched if `-w` is set) by the specified user.
+  `-u` is used).
+* `--user, -u <username>`: Synchronize repositories in the target directory
+  publicly owned (or watched if `-w` is used) by the specified user.
 
 ### General Options
 
-* `--prepend-username, -p`: Prepends each repository's username to the
-  repository.
+* `--fetch`: Use `git fetch` instead of `git pull` when updating repositories.
+* `--prepend-username, -r`: Prepend repositorys' usernames to the clone
+  directory names. This is set by default when `-c`, `-u`, or `-w` are used.
+* `--no-prepend-username, -R`: Don't prepend repositorys' usernames to the
+  clone directory names.
 * `--prepend-sep, -s`: The separator for the prepended username (defaults to
   `-`).
 
@@ -73,6 +79,13 @@ Running `hubsync` with no options is equivalent to the following:
 
 HubSync can be automatically run via your crontab. An example template is
 included in `doc/hubsync.crontab`.
+
+## Other Repositories in the Target Directory
+
+Other repositories in the target directory are left alone when running HubSync.
+HubSync keeps a list of the repositories it manages in the target directory
+(accessible in the `.hubsync` file at the root of the directory`), and only
+those repositories are updated when running HubSync.
 
 ## Development and Contributing
 
