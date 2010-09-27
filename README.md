@@ -44,23 +44,35 @@ Synchronize your GitHub repositories for offline viewing.
 
 ## Options
 
+Use `hubsync --help` for the full list of options.
+
 ### Synchronization Targets
 
-* `--own, -o`: *TODO*
-* `--collabed, -c`: *TODO*
-* `--watched, -w`: *TODO*
-* `--user, -u`: *TODO*
+* `--own, -o`: Synchronize repositories that you own.
+* `--collabed, -c`: Synchronize repositories that you are a collaborator on.
+* `--watched, -w`: Synchronize watched repositories in the target directory
+  for the yourself (by default or if `-o` is set) or for the specified user (if
+  `-u` is set).
+* `--user, -u <USERNAME>`: Synchronize repositories in the target directory owned (or
+  watched if `-w` is set) by the specified user.
 
 ### General Options
 
-* `--debug, -d`: Output debugging information.
-* `--help, -h`: Print help for HubSync.
-* `--quiet, -q`: Suppress output.
-* `--verbose, -v`: Verbose output.
+* `--prepend-username, -p`: Prepends each repository's username to the
+  repository.
+* `--prepend-sep, -s`: The separator for the prepended username (defaults to
+  `-`).
 
-## Configuration
+### Defaults
 
-*TBD*
+Running `hubsync` with no options is equivalent to the following:
+
+    $ hubsync -oc .
+
+## Automatic Synchronization via Crontab
+
+HubSync can be automatically run via your crontab. An example template is
+included in `doc/hubsync.crontab`.
 
 ## Development and Contributing
 

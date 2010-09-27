@@ -1,0 +1,3 @@
+00 1 * * * hubsync /path/to/your/owned/directory          # Synchronize your own repositories every day at 1am
+15 * * * * hubsync -cp /path/to/your/collab/directory     # Synchronize repositories you are a collaborator at 15 minutes past the hour and prepend directories with usernames
+15 9 * * * hubsync -owp /path/to/your/watchlist/directory # Synchronize your watchlist every day at 9:15am and prepend directories with usernames
