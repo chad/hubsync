@@ -1,3 +1,6 @@
+## ***This README currently represents a specification of HubSync's
+      functionality. Please wait until the gem is released to use.***
+
 # HubSync
 
 Synchronize your GitHub repositories for offline viewing.
