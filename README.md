@@ -21,6 +21,18 @@ repositories or watchlist if you so desire).
 
     $ gem install hubsync
 
+## Configuration
+
+HubSync uses the Git global options `github.user` and `github.token` when
+accessing your own repositories and your watchlist. More information on setting
+these options can be found in GitHub's
+[official help](http://help.github.com/git-email-settings/).
+
+Additionally, passing your GitHub username and token via the environment
+variables `HUBSYNC_GITHUB_USER` and `HUBSYNC_GITHUB_TOKEN`, or passing the
+`--my-user` and `my-token` options will override the global Git options (the
+command line options will override the environment variables as well).
+
 ## Usage
 
     $ hubsync [options] [directory]
@@ -61,7 +73,13 @@ Use `hubsync --help` for the full list of options.
 
 ### General Options
 
-* `--fetch`: Use `git fetch` instead of `git pull` when updating repositories.
+* `--my-user`: The username to use when `-o` or `-c` are used. Must be used with
+  `--my-token`. This overrides any other configuration set via global Git
+  settings or environment variables.
+* `--my-token`: The token to use when `-o` or `-c` are used. Must be used with
+  `--my-user`. This overrides any other configuration set via global Git
+  settings or environment variables.
+* `--fetch, -f`: Use `git fetch` instead of `git pull` when updating.
 * `--prepend-username, -r`: Prepend repositorys' usernames to the clone
   directory names. This is set by default when `-c`, `-u`, or `-w` are used.
 * `--no-prepend-username, -R`: Don't prepend repositorys' usernames to the
