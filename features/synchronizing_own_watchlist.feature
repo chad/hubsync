@@ -1,0 +1,1 @@
+Feature: Synchronizing own watchlist
