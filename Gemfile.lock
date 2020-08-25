@@ -16,7 +16,7 @@ GEM
       term-ansicolor (~> 1.0.5)
       trollop (~> 1.16.2)
     json (1.4.6)
-    rake (0.8.7)
+    rake (12.3.3)
     rspec (2.0.0.beta.22)
       rspec-core (= 2.0.0.beta.22)
       rspec-expectations (= 2.0.0.beta.22)
