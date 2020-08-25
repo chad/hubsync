@@ -33,7 +33,7 @@ GEM
     term-ansicolor (1.0.5)
     trollop (1.16.2)
     watchr (0.7)
-    yard (0.6.1)
+    yard (0.9.20)
 
 PLATFORMS
   ruby
